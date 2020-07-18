@@ -35,5 +35,6 @@ cacheSolve <- function(x, ...){
       }
       temp <- x$get()
       inv_matrix <- solve(temp)
+      x$setinv(inv_matrix)
       inv_matrix
 }
